@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CS50 Final Project</title>
+</head>
+<body>
+  <h1>To-Do App</h1>
+
+  <!-- Task input area -->
+  <div>
+    <input type="text" id="task-input" placeholder="Enter a new task">
+    <input type="date" id="start-date">
+    <input type="date" id="deadline-date">
+    <button onclick="handleAddTask()">Add Task</button>
+  </div>
+
+  <!-- Search area -->
+  <div>
+    <input type="text" id="search-input" placeholder="Search tasks">
+    <button onclick="handleSearch()">Search</button>
+    <button onclick="handleUnicodeSearch()">Unicode Search</button>
+  </div>
+
+  <!-- Task list area -->
+  <div id="task-list"></div>
+
+  <!-- Restart button -->
+  <button onclick="resetApp()">Restart App</button>
+
+  <!-- Completed tasks log -->
+  <div id="completed-log">
+    <h3>Completed Tasks Log</h3>
+    <div id="log-list"></div>
+    <button onclick="clearLog()">Clear All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
