@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: #00ffff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff69b4;
+  text-shadow: 0 0 10px #ff69b4;
+  margin-top: 20px;
+}
+
+#task-list {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#completed-log {
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 1px solid #00ffff;
+}
+
+input, button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+input {
+  width: 250px;
+  max-width: 80%;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input {
+    width: 200px;
+    font-size: 14px;
+  }
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #task-list, #completed-log {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    text-align: left;
+    padding: 10px;
+  }
+  input, button {
+    width: 100%;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  #task-list, #completed-log {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
